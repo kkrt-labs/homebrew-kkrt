@@ -6,20 +6,20 @@ require_relative "lib/custom_download_strategy"
 class Testci < Formula
   desc "kkrt is CLI to operate EVM block proving"
   homepage "https://github.com/kkrt-labs/test-ci"
-  version "0.3.6"
+  version "0.3.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kkrt-labs/test-ci/releases/download/v0.3.6/test-ci_0.3.6_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "f05f358179e5c2e78055009833590c3d75c8c2f4d11349236215b1abf7c29926"
+      url "https://github.com/kkrt-labs/test-ci/releases/download/v0.3.8/test-ci_0.3.8_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "a1c7b16cae25a9906c026a05e3913b20d80df85272a70487bcf133b70fc90082"
 
       def install
         bin.install "testci"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kkrt-labs/test-ci/releases/download/v0.3.6/test-ci_0.3.6_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "b383665463a252c1c0ecd640768e10255496e8065c261f0588fdc178c1dbecad"
+      url "https://github.com/kkrt-labs/test-ci/releases/download/v0.3.8/test-ci_0.3.8_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "341a53916da90b2f1ac811ba7017f96868c4cc9980eb17719177ce718cbaf94b"
 
       def install
         bin.install "testci"
@@ -30,8 +30,8 @@ class Testci < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kkrt-labs/test-ci/releases/download/v0.3.6/test-ci_0.3.6_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-        sha256 "fb866043b8173a6ad4cdb2f7460028da9530fae28d1e5ecc220cb15241373649"
+        url "https://github.com/kkrt-labs/test-ci/releases/download/v0.3.8/test-ci_0.3.8_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "33cdc3710008b48c7f6858a5f9a8fcfb94a3d039797809d1e194b376f4c9f65f"
 
         def install
           bin.install "testci"
@@ -40,8 +40,8 @@ class Testci < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kkrt-labs/test-ci/releases/download/v0.3.6/test-ci_0.3.6_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-        sha256 "58e956a675d5fce537e8fba49785170cc1470ff976f8bbcc9c8c52310eff17fb"
+        url "https://github.com/kkrt-labs/test-ci/releases/download/v0.3.8/test-ci_0.3.8_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "6eb81c29b7ade7b02ced8916570fadb271c2133e5c1081e7abdd3a0c16d00aac"
 
         def install
           bin.install "testci"
