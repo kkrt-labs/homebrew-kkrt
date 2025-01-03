@@ -6,20 +6,20 @@ require_relative "lib/custom_download_strategy"
 class Kkrtctl < Formula
   desc "kkrtctl is CLI to operate proving of EVM blocks"
   homepage "https://github.com/kkrt-labs/kakarot-controller"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kkrt-labs/test-ci/releases/download/v0.1.0/kakarot-controller_0.1.0_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "273c5b08458de8d54a1908f56bf261f33fafac013e62fc4123b46d1bbb4e4360"
+      url "https://github.com/kkrt-labs/kakarot-controller/releases/download/v0.1.1/kakarot-controller_0.1.1_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "d15fe955bad6bffc2e2d114a9e5a1a708c77a26a8c42a347a45873fbded30538"
 
       def install
         bin.install "kkrtctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kkrt-labs/test-ci/releases/download/v0.1.0/kakarot-controller_0.1.0_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "22d7857dcc2fdca5fa765c9eac2207bde9030def077c93f1ee197e6ae00e1e2f"
+      url "https://github.com/kkrt-labs/kakarot-controller/releases/download/v0.1.1/kakarot-controller_0.1.1_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "378763d93fa392a43d810b58acd3d843c3563c22568ebf23a8a9f1e6c5705328"
 
       def install
         bin.install "kkrtctl"
@@ -30,8 +30,8 @@ class Kkrtctl < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kkrt-labs/test-ci/releases/download/v0.1.0/kakarot-controller_0.1.0_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-        sha256 "b76413804142b3017733955b06672442035a52cbd35b7b364d6860662626f530"
+        url "https://github.com/kkrt-labs/kakarot-controller/releases/download/v0.1.1/kakarot-controller_0.1.1_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "0934e52beca39568cc8d97e50736686f7b4a0faf017e627a4a50ae8c5bab08b0"
 
         def install
           bin.install "kkrtctl"
@@ -40,8 +40,8 @@ class Kkrtctl < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kkrt-labs/test-ci/releases/download/v0.1.0/kakarot-controller_0.1.0_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-        sha256 "fdaaee9f588b7ee1ef12cb5d4d4ad071361068bd4b5851b9afdffccce52d97ae"
+        url "https://github.com/kkrt-labs/kakarot-controller/releases/download/v0.1.1/kakarot-controller_0.1.1_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "c0a23a4b517109be83c5e7d8577676a01ffd73706c5110e448f49e69dbfe4659"
 
         def install
           bin.install "kkrtctl"
