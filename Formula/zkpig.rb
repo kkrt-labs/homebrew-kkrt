@@ -5,20 +5,20 @@
 class Zkpig < Formula
   desc "zkpig enables to generate ZK-EVM prover inputs for proving EVM blocks"
   homepage "https://github.com/kkrt-labs/zk-pig"
-  version "0.4.1"
+  version "0.4.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kkrt-labs/zk-pig/releases/download/v0.4.1/zk-pig_0.4.1_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "fafe03d6b30e2bc870ac58c617534da614b6c1ebebe847ec7b4ea88e96143fd2"
+      url "https://github.com/kkrt-labs/zk-pig/releases/download/v0.4.2/zk-pig_0.4.2_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "dd112363608c6575525d2870fe6a48dee802e4fffe47f04c8edad93a4c9e4472"
 
       def install
         bin.install "zkpig"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kkrt-labs/zk-pig/releases/download/v0.4.1/zk-pig_0.4.1_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "23ab1cacce11d97ec95e86ebac54c112ac08aad0b19f3aacfcdae2d7837f62c8"
+      url "https://github.com/kkrt-labs/zk-pig/releases/download/v0.4.2/zk-pig_0.4.2_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d4d1072d494f8566256d7c93aa3f3bb1b7ed3cfebb7c1cc02c2ff7861ed2028f"
 
       def install
         bin.install "zkpig"
@@ -29,8 +29,8 @@ class Zkpig < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kkrt-labs/zk-pig/releases/download/v0.4.1/zk-pig_0.4.1_linux_amd64.tar.gz", using: CurlDownloadStrategy
-        sha256 "f430a407d629fd2c4defe64183c88add6d72493546df06e7d3cac18fc166eb8e"
+        url "https://github.com/kkrt-labs/zk-pig/releases/download/v0.4.2/zk-pig_0.4.2_linux_amd64.tar.gz", using: CurlDownloadStrategy
+        sha256 "cd81eb8250125b20423ed52f3efdbd434ca0ce0aedcb1a8d54cd725af1a3f6e9"
 
         def install
           bin.install "zkpig"
@@ -39,8 +39,8 @@ class Zkpig < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kkrt-labs/zk-pig/releases/download/v0.4.1/zk-pig_0.4.1_linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "bdfdecc267546bf56e043652399d5ea7dcd28c12a55b7c4fc17dfd3e2ff134aa"
+        url "https://github.com/kkrt-labs/zk-pig/releases/download/v0.4.2/zk-pig_0.4.2_linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "eebc1ca117e3fd93445898a6c1c74bd8385c2a68de0e1b979441a2d89c74d0ae"
 
         def install
           bin.install "zkpig"
